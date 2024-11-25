@@ -1,0 +1,27 @@
+<div fxLayout="column" style="height: 100vh;">
+    <mat-card fxFlex="10%" appearance="raised" class="heading">
+        <mat-card-content fxLayout="row" fxLayoutAlign="space-between" class="header">
+            <div class="heading">
+                <h1>Post App</h1>
+            </div>
+            <div class="nav">
+                <ul fxLayout="row" fxLayoutAlign="center end">
+                    <li *ngFor="let item of navItems">{{item}}</li>
+                </ul>
+            </div>
+        </mat-card-content>
+    </mat-card>
+    <div fxFlex="90%" fxLayout="row">
+        <mat-card fxFlex="20%">
+            <ul>
+                <li><button mat-raised-button color="primary">Create Post</button></li>
+                <li *ngFor="let item of navItems">post1</li>
+            </ul>
+        </mat-card>
+        <mat-card fxFlex="80%">
+            <app-create-post></app-create-post>
+
+        </mat-card>
+    </div>
+    
+</div>

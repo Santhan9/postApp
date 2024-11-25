@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NAV_ITEMS } from './constant/stringConstant';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'postApp';
+
 }
